@@ -1,0 +1,70 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "IPHONE 13",
+      "desc": "APPLE",
+      "price": 20000000
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
+    },
+    {
+      "name": "edwedwe",
+      "desc": "jkbckdc",
+      "price": 11111,
+      "id": 4
+    },
+    {
+      "name": "32re32",
+      "desc": "23r234",
+      "price": "234234",
+      "id": 5
+    },
+    {
+      "name": "wdwq",
+      "desc": "dqwd",
+      "price": "ddddd",
+      "id": 6
+    },
+    {
+      "name": "23432",
+      "desc": "32e32",
+      "price": "23432432",
+      "id": 7
+    },
+    {
+      "name": "ểtrter",
+      "desc": "ere",
+      "price": "0ewtwerw",
+      "id": 8
+    },
+    {
+      "name": "",
+      "desc": "",
+      "price": 0,
+      "id": 9
+    },
+    {
+      "name": "",
+      "desc": "",
+      "price": 0,
+      "id": 10
+    },
+    {
+      "name": "ewqe",
+      "desc": "qweqw",
+      "price": "0qweqw",
+      "id": 11
+    },
+    {
+      "name": "eqwe",
+      "desc": "qweqw",
+      "price": "0qweqw",
+      "id": 12
+    }
+  ]
+}
