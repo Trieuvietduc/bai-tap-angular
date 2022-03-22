@@ -10,6 +10,7 @@ import { ProductService } from '../services/product.service';
 export class ProductFormComponent implements OnInit {
   productDetail: any;
   id: any;
+  products: any;
   constructor(
     private ActiRoute: ActivatedRoute, // sử dụng để lấy id trên url
     private router: Router, // sử dụng để diều hướng
@@ -32,10 +33,10 @@ export class ProductFormComponent implements OnInit {
   }
   onsubmit(obj: any) {
     // nhận dữ liệu từ form và tiến hành call api
-    if (this.id === undefined) {
-      this.ps.createProduct(obj).subscribe()
-    } else {
+    if (this.id !== undefined) {
       this.ps.updateProduct(this.id, obj).subscribe()
+    } else {
+      this.ps.createProduct(obj).subscribe()
     }
     // tiến hành điều hướng về trang danh sách
     this.router.navigate(['/product'])

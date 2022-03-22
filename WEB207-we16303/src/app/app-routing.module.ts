@@ -31,7 +31,6 @@ const routes: Routes = [
     component: StudentComponent
   }
 ];
-
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]
