@@ -13,24 +13,27 @@ type PRODUCT_TYPE = {
   templateUrl: './product.component.html',
   styleUrls: ['./product.component.css']
 })
-export class ProductComponent implements OnInit {
-  products:any;
-  constructor(private ps: ProductService) { }
 
+export class ProductComponent implements OnInit {
+  products: any;
+  constructor(private ps: ProductService
+  ) {
+
+  }
   ngOnInit(): void {
     this.ps.getProducts().subscribe(data => {
       this.products = data;
-      console.log(this.products);
     });
   }
-
   newProduct = {
     name: '',
     price: 0,
     desc: ''
   };
-
-  onSubmit(product :any) {
-    console.log(product);
+  delete(id: number) {
+    this.ps.Del(id).subscribe();
+    this.ps.getProducts().subscribe(data => {
+      this.products = data;
+    });
   }
 }
