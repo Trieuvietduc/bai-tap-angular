@@ -1,7 +1,7 @@
 <div class="container">
   <!-- <p>{{productForm.value | json}}</p> -->
 
-  <p>{{newProduct | json}}</p>
+  <!-- <p>{{newProduct | json}}</p> -->
 
   <div class="row">
     <a [routerLink]="['/product','add']">
@@ -29,7 +29,7 @@
               <a [routerLink]="['/product', product.id, 'edit']">
                 <button class="btn btn-warning">Chinh sua</button>
               </a>
-                <button class="btn btn-danger" (click)="delete(product.id)">Xoa</button>
+             <button class="btn btn-danger" (click)="dell(product.id)">Xoa</button>
             </td>
           </tr>
         </tbody>

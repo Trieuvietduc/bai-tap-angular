@@ -19,6 +19,10 @@ const routes: Routes = [
     component: ProductDetailComponent
   },
   {
+    path: 'product/:id/del',
+    component: ProductComponent
+  },
+  {
     path: 'product/:id/edit',
     component: ProductFormComponent
   },
@@ -30,7 +34,7 @@ const routes: Routes = [
     path: 'student',
     component: StudentComponent
   }
-];
+];0
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
   exports: [RouterModule]

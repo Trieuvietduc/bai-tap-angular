@@ -33,10 +33,12 @@ export class ProductFormComponent implements OnInit {
   }
   onsubmit(obj: any) {
     // nhận dữ liệu từ form và tiến hành call api
-    if (this.id !== undefined) {
+    if (this.id != undefined) {
       this.ps.updateProduct(this.id, obj).subscribe()
     } else {
-      this.ps.createProduct(obj).subscribe()
+      this.ps.createProduct(obj).subscribe(data=>{
+        this.products = data;  
+      })
     }
     // tiến hành điều hướng về trang danh sách
     this.router.navigate(['/product'])
